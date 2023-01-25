@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>War For Love</title>
+    <link rel="icon" type="image/x-icon" href="./assets/ico/favicon.ico" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="video-container">
+        <div class="video-fade"></div>
+        <video
+          class="video"
+          loop
+          autoplay
+          muted
+          src="./assets/video/header.mp4"
+        ></video>
+        <div class="video-gradient"></div>
+      </div>
+      <div class="container">
+        <nav
+          class="header-nav"
+          data-aos="fade-down"
+          data-aos-once="true"
+          data-aos-easing="ease-out"
+          data-aos-delay="50"
+        >
+          <div class="logo-container">
+            <img class="logo" src="./assets/pictures/logo.png" alt="logo" />
+            <img src="./assets/pictures/logo-title.png" alt="logo-title" />
+          </div>
+          <div class="nav-list">
+            <span class="nav-list__item text-white">About</span>
+            <span class="nav-list__item text-white">News</span>
+            <span class="nav-list__item text-white">Music</span>
+            <span class="nav-list__item text-white">Media</span>
+            <span class="nav-list__item text-white">Tours</span>
+            <span class="nav-list__item text-white">Contacts</span>
+          </div>
+        </nav>
+        <h2
+          class="subtitle text-white"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-delay="50"
+        >
+          New Single
+        </h2>
+        <h1
+          class="title"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-delay="100"
+        >
+          War For Love
+        </h1>
+        <div
+          class="video-controls"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-delay="150"
+        >
+          <div class="video-play-container">
+            <img src="./assets/svg/player-play.svg" alt="play" />
+          </div>
+          <div class="video-progress-container">
+            <progress class="video-progress" value="10" max="100"></progress>
+          </div>
+          <div class="video-time-container">
+            <span class="medium-18 video-time">00:22-02:54</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section>
+          <div class="news-list">
+            <div
+              class="news-list__item"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-offset="0"
+            >
+              <img
+                class="news-list__img"
+                src="./assets/pictures/news2.png"
+                alt="news-image"
+              />
+              <div class="news-list__article-container">
+                <span class="news-list__article medium-16 text-white">
+                  Working on my upcoming full-lenth<br />
+                  album that`s releasing later this year.
+                </span>
+              </div>
+            </div>
+            <div
+              class="news-list__item"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="50"
+              data-aos-offset="0"
+            >
+              <img
+                class="news-list__img"
+                src="./assets/pictures/news3.png"
+                alt="news-image"
+              />
+              <div class="news-list__article-container">
+                <span class="news-list__article medium-16 text-white">
+                  Halloween vibes.<br />
+                  Listen my new track!
+                </span>
+              </div>
+            </div>
+            <div
+              class="news-list__item"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="100"
+              data-aos-offset="0"
+            >
+              <img
+                class="news-list__img"
+                src="./assets/pictures/news1.png"
+                alt="news-image"
+              />
+              <div class="news-list__article-container">
+                <span class="news-list__article medium-16 text-white">
+                  WarForLove is OUT NOW!!<br />
+                  Stream it here!
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section></section>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

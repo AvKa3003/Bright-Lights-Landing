@@ -1,0 +1,36 @@
+.news-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 130px;
+  margin-bottom: 180px;
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: calc($col * 4 + $gutter * 3);
+    height: 300px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  &__img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  &__article-container {
+    position: relative;
+    z-index: 2;
+    background-color: $accent07;
+    width: 100%;
+    height: 90px;
+    padding: 21px 20px;
+    border-top-left-radius: 20px;
+  }
+}
