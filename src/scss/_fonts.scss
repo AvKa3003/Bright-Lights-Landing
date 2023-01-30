@@ -54,6 +54,13 @@
   line-height: 150px;
 }
 
+%regular-16 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .semibold-18 {
   @extend %semibold-18;
 }
@@ -84,6 +91,10 @@
 
 .bold-100 {
   @extend %bold-100;
+}
+
+.regular-16 {
+  @extend %regular-16;
 }
 
 .text-white {

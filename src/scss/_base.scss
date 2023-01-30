@@ -13,3 +13,9 @@ header {
   z-index: 1;
   margin: 0 auto;
 }
+
+.section-header {
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+}
