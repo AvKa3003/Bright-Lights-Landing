@@ -95,13 +95,11 @@
 }
 
 .subtitle {
-  @extend %bold-48;
   margin-bottom: 10px;
   margin-top: 322px;
 }
 
 .title {
-  @extend %bold-100;
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: $white;
