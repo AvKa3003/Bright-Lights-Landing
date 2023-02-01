@@ -457,6 +457,11 @@
         </section>
       </div>
       <section class="events">
+        <div class="events__btn-container events__prev-container">
+          <div class="events__btn events__prev">
+            <img src="./assets/svg/events-arrow.svg" alt="arrow" />
+          </div>
+        </div>
         <div class="container">
           <div class="events__slider">
             <div
@@ -657,6 +662,11 @@
             </div>
           </div>
         </div>
+        <div class="events__btn-container events__next-container">
+          <div class="events__btn events__next events__rotated-btn">
+            <img src="./assets/svg/events-arrow.svg" alt="arrow" />
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
@@ -673,11 +683,11 @@
         speed: 600,
         autoplayHoverPause: true,
         gutter: 30,
-        controls: false,
+        controls: true,
         nav: false,
         autoplayButtonOutput: false,
         prevButton: ".events__prev",
-        nextButton: ".events_next",
+        nextButton: ".events__next",
       });
     </script>
   </body>

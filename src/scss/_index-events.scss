@@ -1,5 +1,11 @@
 .events {
-  margin: 160px 0 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: fit-content;
+
+  margin: 160px auto 100px auto;
 
   &__card {
     width: 350px;
@@ -72,5 +78,34 @@
 
   &__tickets:hover .events__card-footer-text {
     transform: scale(1.05);
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $white;
+    border-radius: 10px 0;
+    width: 40px;
+    height: 60px;
+    transition: transform 0.1s ease;
+  }
+
+  &__btn-container {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    cursor: pointer;
+  }
+
+  &__prev-container:hover > &__btn {
+    transform: translateX(-5px);
+  }
+
+  &__next-container:hover > &__btn {
+    transform: translateX(5px) rotate(180deg);
+  }
+
+  &__rotated-btn {
+    transform: rotate(180deg);
   }
 }
