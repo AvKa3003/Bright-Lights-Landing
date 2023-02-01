@@ -10,10 +10,10 @@
     transition: transform ease 0.3s;
     margin-top: 20px;
     margin-bottom: 80px;
+  }
 
-    &:hover {
-      transform: translateY(-20px);
-    }
+  &__card-container:hover &__card {
+    transform: translateY(-20px);
   }
 
   &__lable {
