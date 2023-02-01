@@ -1,8 +1,22 @@
+%semibold-14 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 %semibold-18 {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
+}
+
+%semibold-24 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 %medium-18 {
@@ -17,6 +31,13 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+}
+
+%bold-14 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 %bold-16 {
@@ -68,8 +89,16 @@
   line-height: 27px;
 }
 
+.semibold-14 {
+  @extend %semibold-14;
+}
+
 .semibold-18 {
   @extend %semibold-18;
+}
+
+.semibold-24 {
+  @extend %semibold-24;
 }
 
 .medium-18 {
@@ -78,6 +107,10 @@
 
 .medium-16 {
   @extend %medium-16;
+}
+
+.bold-14 {
+  @extend %bold-14;
 }
 
 .bold-16 {

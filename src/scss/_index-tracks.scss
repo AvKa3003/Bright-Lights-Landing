@@ -1,0 +1,96 @@
+.tracks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 180px;
+
+  &__image-container1 {
+    max-width: 510px;
+    background-color: rgba($accent, 0.3);
+    padding: 19px;
+    border-radius: 1000px;
+  }
+
+  &__image-container2 {
+    background-color: rgba($accent, 0.6);
+    padding: 19px;
+    border-radius: 1000px;
+    line-height: 0;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 1000px;
+    overflow: hidden;
+  }
+
+  &__main {
+    width: 49%;
+  }
+
+  &__player {
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    list-style-type: decimal-leading-zero;
+    list-style-position: outside;
+    counter-reset: tracks;
+  }
+
+  &__list-item {
+    cursor: pointer;
+    counter-increment: tracks;
+    margin-left: 20px;
+    text-indent: -35px;
+    padding-left: 17px;
+  }
+
+  &__list-item::before {
+    content: "";
+    padding-right: 35px;
+  }
+
+  &__list-item + &__list-item {
+    margin-top: 20px;
+  }
+
+  &__list-item::marker {
+    @extend %bold-14;
+    content: counters(tracks, ".", decimal-leading-zero);
+    color: rgba($white, 0.5);
+    counter-increment: tracks;
+  }
+
+  &__footer {
+    margin-top: 50px;
+    display: flex;
+  }
+
+  &__footer-lable {
+    margin-right: 40px;
+  }
+
+  &__footer-item + &__footer-item {
+    margin-left: 30px;
+  }
+
+  &__footer-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__footer-image-container {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__footer-image {
+    display: block;
+    width: 100%;
+  }
+}
