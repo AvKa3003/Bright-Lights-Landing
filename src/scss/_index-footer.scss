@@ -32,11 +32,22 @@
     background-color: $accent;
     border: 8px solid $gray;
     border-radius: 100px;
+    transition: border linear 0.1s;
+    cursor: pointer;
+  }
+
+  &__social-item-container:hover {
+    border: 4px solid $gray;
+  }
+
+  &__social-item-container:hover &__social-item {
+    transform: rotate(-10deg) scale(1.05);
   }
 
   &__social-item {
     max-width: 24px;
     max-height: 24px;
+    transition: transform linear 0.1s;
   }
 
   &__copyright {
