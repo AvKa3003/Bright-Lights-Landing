@@ -1,0 +1,10 @@
+.logo-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.logo {
+  transform: translateY(-12px);
+}
