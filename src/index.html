@@ -45,12 +45,14 @@
             <img src="./assets/pictures/logo-title.png" alt="logo-title" />
           </a>
           <nav class="nav-list">
-            <span class="nav-list__item text-white">About</span>
-            <span class="nav-list__item text-white">News</span>
-            <span class="nav-list__item text-white">Music</span>
-            <span class="nav-list__item text-white">Media</span>
-            <span class="nav-list__item text-white">Tours</span>
-            <span class="nav-list__item text-white">Contacts</span>
+            <a href="#anchor-news" class="nav-list__item text-white">News</a>
+            <a href="#anchor-about" class="nav-list__item text-white">About</a>
+            <a href="#anchor-media" class="nav-list__item text-white">Media</a>
+            <a href="#anchor-music" class="nav-list__item text-white">Music</a>
+            <a href="#anchor-tours" class="nav-list__item text-white">Tours</a>
+            <a href="#anchor-contacts" class="nav-list__item text-white"
+              >Contacts</a
+            >
           </nav>
         </nav>
         <h2
@@ -89,7 +91,8 @@
     </header>
     <main>
       <div class="container">
-        <section class="news">
+        <div id="anchor-news" class="anchor-margin"></div>
+        <section id="anchor-news" class="news">
           <div
             class="news__item"
             data-aos="fade-up"
@@ -147,6 +150,7 @@
             </div>
           </div>
         </section>
+        <div id="anchor-about" class="anchor-margin"></div>
         <section class="about-us">
           <div class="container about-us__container">
             <div class="about-us__main">
@@ -228,6 +232,7 @@
             </div>
           </div>
         </section>
+        <div id="anchor-media" class="anchor-margin"></div>
         <section class="quote">
           <div
             class="quote__container"
@@ -257,6 +262,7 @@
             />
           </div>
         </section>
+        <div id="anchor-music" class="anchor-margin"></div>
         <section class="tracks">
           <div
             class="tracks__image-container1"
@@ -456,6 +462,7 @@
           </div>
         </section>
       </div>
+      <div id="anchor-tours"></div>
       <section class="events">
         <div class="events__btn-container events__prev-container">
           <div class="events__btn events__prev">
@@ -669,7 +676,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="anchor-contacts" class="footer">
       <a href="#" class="logo-container">
         <img class="logo" src="./assets/pictures/logo.png" alt="logo" />
         <img src="./assets/pictures/logo-title.png" alt="logo-title" />
