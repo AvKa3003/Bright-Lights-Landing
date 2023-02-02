@@ -75,6 +75,13 @@
   line-height: 150px;
 }
 
+%regular-13 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+
 %regular-16 {
   font-style: normal;
   font-weight: 400;
@@ -133,6 +140,10 @@
   @extend %bold-100;
 }
 
+.regular-13 {
+  @extend %regular-13;
+}
+
 .regular-16 {
   @extend %regular-16;
 }
@@ -151,4 +162,8 @@
 
 .text-white05 {
   color: $white05;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }

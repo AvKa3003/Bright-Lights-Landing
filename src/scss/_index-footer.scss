@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  &__contacts {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+
+  &__contacts-lable {
+    text-align: end;
+  }
+
+  &__social {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  &__social-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: $accent;
+    border: 8px solid $gray;
+    border-radius: 100px;
+  }
+
+  &__social-item {
+    max-width: 24px;
+    max-height: 24px;
+  }
+
+  &__copyright {
+    margin-top: 40px;
+  }
+}
